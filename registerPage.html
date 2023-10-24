@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Регистрация</title>
+    <title>Registration</title>
     <style>
         body {
             display: flex;
@@ -9,13 +9,14 @@
             align-items: center;
             height: 100vh;
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+            background-image: url('/background_skurim.jpg'); 
+            background-repeat: no-repeat; 
         }
 
         .container {
             width: 400px;
             padding: 20px;
-            background-color: #fff;
+            background-color: #f0dddd44;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             text-align: center;
@@ -23,6 +24,9 @@
 
         .form-field {
             margin-bottom: 20px;
+            margin-right: 20px;
+            margin-left: 10px;
+            
         }
 
         .form-field label {
@@ -37,7 +41,7 @@
             width: 100%;
             padding: 8px;
             border-radius: 3px;
-            border: 1px solid #ccc;
+            border: 2px solid #690a5f63;
             box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
         }
 
@@ -49,6 +53,7 @@
 
         .gender label {
             margin-right: 40px;
+            
         }
 
         .gender img {
@@ -59,10 +64,10 @@
         }
 
         .submit-btn {
-            background-color: #4CAF50;
+            background-color: #690a5fc9;
             color: white;
             padding: 10px 10px;
-            border-radius: 3px;
+            border-radius: 33px;
             border: none;
             cursor: pointer;
         }
@@ -70,28 +75,28 @@
 </head>
 <body>
     <div class="container">
-        <h2>Регистрация</h2>
+        <h2>Registration</h2>
         <div class="form-field">
-            <label for="login">Логин:</label>
+            <label for="login">username</label>
             <input type="text" id="login" name="login">
         </div>
         <div class="form-field">
-            <label for="password">Пароль:</label>
+            <label for="password">password</label>
             <input type="password" id="password" name="password">
         </div>
         <div class="gender">
             <label for="male">
                 <img src="gigachad.jpg" alt="Мужской пол">
-                Мужской
+                MAN
             </label>
             <input type="radio" id="male" name="gender" value="male">
             <label for="female">
                 <img src="gigawoman.jpg" alt="Женский пол">
-                Женский
+                WOMAN
             </label>
             <input type="radio" id="female" name="gender" value="female">
         </div>
-        <button class="submit-btn" type="submit">Зарегистрироваться</button>
+        <button class="submit-btn" type="submit">Let's Go!</button>
     </div>
 </body>
 </html>
